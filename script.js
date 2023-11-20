@@ -1,4 +1,4 @@
-console.log('Part: 1 Growing Pains');
+console.log('///////=== Part: 1 Growing Pains===///////');
 
 const PI = 3.1415;
 const radius = 5;
@@ -11,10 +11,10 @@ console.log(` Max Capacity = ${area} sqft`);//79 rounded
 const maxCapacity = area;
 const startPlants = 20
 const eachPlant = .8
-const startArea = startPlants * eachPlant;// week 1
-console.log(`Week 1 area = ${startArea}`);// 16
+const startArea = startPlants * eachPlant;// week 0
+console.log(`Week 0// Start area = ${startArea}`);// 16
 let week = 3;// current week
-let plantGrowth = (startArea * 2) * (week - 1) ;// week2 
+let plantGrowth = (startArea * 2) * (week) ;
 console.log(`The plant growth for week ${week} is ${plantGrowth} sqft`);
 
 // needs to be PRUNED max 80% of area- 79 sq
@@ -30,3 +30,19 @@ if (plantGrowth / maxCapacity >= .8){
 } else if (plantGrowth / maxCapacity < .5){
     console.log(`Week ${week}: plants need to be PLANTED`);
 }
+
+
+
+
+console.log('///////====Thinking Bigger====//////');
+
+const startPlants2 = 100;
+const eachPlant2 = .8;
+const startArea2 = startPlants2 * eachPlant2;// week 0
+weekNum = 10;
+console.log(`Week 0// Start area for phase 2 = ${startArea2}`);//80
+const weeklyGrowth = (startArea * 2 ) * week;
+ 
+if (weekNum >= 10){
+    console.log(`It is week ${week} time to prune! The garden has now grown to ${weeklyGrowth} sqft`);
+};
